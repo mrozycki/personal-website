@@ -93,5 +93,15 @@ body {
 
 /* Social Media bar */
 #social-bar {
+  color: #aaa;
+  font-size: 48px;
+  padding: 10px;
+}
+
+#social-bar i {
+  transition: 200ms color;
+}
+
+#social-bar i:hover {
   color: white;
 }
