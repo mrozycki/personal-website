@@ -4,48 +4,86 @@
     <title>Mariusz Różycki</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
   </head>
 
   <body>
-    <div id="main-wrapper">
-      <div id="nav">
-	<ul>
-	  <li>
-	    <a href="#blog">
-	      <img src="http://placehold.it/200" />
-	      <p>blog</p>
-	    </a>
-	  </li>
-
-	  <li>
-	    <a href="#about">
-	      <img src="http://placehold.it/200" />
-	      <p>o mnie</p>
-	    </a>
-	  </li>
-
-	  <li>
-	    <a href="#projects">
-	      <img src="http://placehold.it/200" />
-	      <p>projekty</p>
-	    </a>
-	  </li>
-	</ul>
-	<div class="clearfix"></div>
-      </div>
-
+    <div id="sidebar">
       <div id="title">
-	mariusz<span>różycki</span>
+        <a href="/">
+          <h1>
+            <span>mariusz</span>różycki
+          </h1>
+        </a>
       </div>
 
       <div id="social-bar">
-	<ul>
-	  <li><i class="fa fa-github-square"></i></li>
-	</ul>
+        <ul>
+          <li><i class="fa fa-github-square"></i></li>
+          <li><i class="fa fa-twitter-square"></i></li>
+          <li><i class="fa fa-linkedin-square"></i></li>
+          <li><i class="fa fa-google-plus-square"></i></li>
+        </ul>
       </div>
+    </div>
 
+    <div id="content">
+      <h2>Test typografii</h2>
+      <h3>Tekst i inne</h3>
+      <h4>Tylko akapity</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non 
+        tortor quis ligula porttitor feugiat in vel metus. In suscipit, est ut malesuada
+        malesuada, lacus neque finibus purus, sit amet blandit sapien sapien eu tortor.
+        Mauris eget imperdiet dolor, vel vehicula justo.</p>
+        <p>Donec eget ex nec massa blandit lacinia. Donec tempus nibh nec nibh aliquet
+        pulvinar. Nulla scelerisque vel ante vel venenatis. Pellentesque porta, diam at
+        mattis facilisis, massa nibh volutpat sapien, in accumsan lectus lacus 
+        et tortor. Vestibulum quis feugiat massa.</p>
+
+      <h4>Listy i akapity</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non 
+        tortor quis ligula porttitor feugiat in vel metus:</p>
+        <ol>
+          <li>in suscipit, est ut malesuada,</li>
+          <li>malesuada, lacus neque finibus purus,</li>
+          <li>sit amet blandit sapien sapien eu tortor.</li>
+        </ol>
+        <p>Donec eget ex nec massa blandit lacinia. Donec tempus nibh nec nibh aliquet
+        pulvinar. Nulla scelerisque vel ante vel venenatis. Pellentesque porta, diam at
+        mattis facilisis, massa nibh volutpat sapien, in accumsan lectus lacus 
+        et tortor. Vestibulum quis feugiat massa:</p>
+        <ul>
+          <li>fusce fermentum dui a justo gravida, </li>
+          <li>vitae accumsan turpis finibus:
+            <ul>
+              <li>mauris vel dapibus nisi,</li>
+              <li>proin faucibus ante est.</li>
+            </ul>
+          </li>
+          <li>id tempor urna porttitor ac.</li>
+        </ul>
+        <p>Etiam lorem nibh, dignissim vel quam in, mattis fringilla lacus. Etiam massa 
+        velit, pellentesque id iaculis vel, iaculis non massa.</p>
+
+      <h4>Półśkię źńąćżki</h4>
+        <p>Pchnąć w tę łódź jeża lub ośm skrzyń fig. Zażółć gęślą jaźń.</p>
+
+      <h3>Bloki kodu i inline</h3>
+        <p>Donec eget ex nec massa blandit lacinia. Donec tempus nibh nec nibh aliquet
+        pulvinar. Nulla scelerisque vel ante vel venenatis. Pellentesque porta, diam at
+        mattis facilisis, massa nibh volutpat sapien, in accumsan lectus lacus 
+        et tortor. Vestibulum quis feugiat massa:</p>
+        <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  cout &lt;&lt; "Hello, world!" &lt;&lt; endl;
+
+  return 0;
+}</code></pre>
+        <p>Consectetur adipiscing <code>int main()</code> elit.</p>
+        <p>Powrót do <a href="/">strony głównej</a>.</p>
     </div>
   </body>
 </html>
