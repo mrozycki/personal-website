@@ -1,2 +1,2 @@
-personal-website
-================
+Rozycki Consulting website
+==========================
