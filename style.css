@@ -13,12 +13,11 @@
 /* General */
 body, html {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
-body {
-}
-
-#sidebar {
+.sidebar {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,137 +29,194 @@ body {
 }
 
 /* Title */
-#title {
-  position: absolute;
-  bottom: 0px;
+.title {
+  margin-top: 100px;
   width: 100%;
   text-align: right;
-  padding: 30px;
+  padding: 2rem;
 }
 
-#title h1 {
+.title span.top {
   font-size: 72px;
-  font-family: 'Roboto', sans-serif;
+  line-height: 72px;
 }
-
-#title span {
+.title span.firstname {
   font-weight: 300;
 }
 
-#title a {
+.title span.bottom {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 38px;
+  margin-right: -38px;
+  position: relative;
+  text-align: right;
+  top: -10px;
+}
+
+.title a {
   color: white;
   text-decoration: none;
 }
 
 /* Navigation */
-
-/* Social Media bar */
-#social-bar {
-  color: #aaa;
-  font-size: 48px;
-  padding: 10px;
+nav ul {
+  list-style-type: none;
   text-align: right;
 }
 
-#social-bar {
-  list-style-type: none;
+nav li {
+  border-right: 0px solid white;
+  padding-right: 0.5rem;
 }
 
-#social-bar li {
+nav li:hover {
+  border-right-width: 0.5rem;
+  padding-right: 0px;
+}
+
+nav a {
   display: inline-block;
+  width: 100%;
+  color: #aaa;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  line-height: 3rem;
+  padding-right: 1.5rem;
+  font-weight: 100;
 }
 
-#social-bar i {
-  transition: 200ms color;
-}
-
-#social-bar i:hover {
+nav li:hover a {
   color: white;
 }
 
-#content {
+/* Social Media bar */
+.social-bar {
+  color: #aaa;
+  font-size: 48px;
+  padding: 2rem;
+  text-align: right;
+  cursor: pointer;
+}
+
+.social-bar {
+  list-style-type: none;
+}
+
+.social-bar li {
+  display: inline-block;
+}
+
+.social-bar i {
+  transition: 200ms color;
+}
+
+.social-bar i:hover {
+  color: white;
+}
+
+.content {
   margin-left: 570px;
   width: 70%;
   max-width: 900px;
   padding: 100px 0 50px 100px;
-  font-family: 'Roboto', sans-serif;
 }
 
-#content h2 {
+.content h2 {
   font-weight: 300;
-  font-size: 42pt;
-  line-height: 63pt; 
-  margin-bottom: 21pt;
+  font-size: 3rem;
+  line-height: 4.5rem; 
+  margin-bottom: 1.5rem;
 
   text-transform: uppercase;
+  letter-spacing: 3px;
   border-bottom: 1px solid #ddd;
 }
 
-#content h3 {
-  font-size: 28pt;
-  line-height: 42pt;
+.content h3 {
+  font-size: 2rem;
+  line-height: 3rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 300;
 }
 
-#content p+h3,
-#content ul+h3,
-#content ol+h3 {
-  margin-top: 42pt;
+.content p+h3,
+.content ul+h3,
+.content ol+h3 {
+  margin-top: 3rem;
 }
 
-#content h4 {
-  font-size: 21pt;
-  line-height: 42pt;
+.content h4 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding-top: 0.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-#content p+h4 {
-  margin-top: 21pt;
+.content p+h4 {
+  margin-top: 1.5rem;
 }
 
-#content p,
-#content ul,
-#content ol,
-#content code {
-  font-size: 14pt;
-  line-height: 1.5em;
+.content p,
+.content ul,
+.content ol,
+.content code {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-#content ul,
-#content ol {
-  padding-left: 54pt;
+.content ul,
+.content ol {
+  padding-left: 4rem;
 }
 
-#content ul ul,
-#content ul ol,
-#content ol ul,
-#content ol ol {
-  padding-left: 42pt;
+.content ul ul,
+.content ul ol,
+.content ol ul,
+.content ol ol {
+  padding-left: 3rem;
 }
 
-#content p+p,
-#content ul+p,
-#content ol+p,
-#content p+ul,
-#content p+ol {
-  margin-top: 21pt;
+.content p+p,
+.content ul+p,
+.content ol+p,
+.content p+ul,
+.content p+ol {
+  margin-top: 1.5rem;
 }
 
-#content pre {
-  margin: 21pt 0;
+.content pre {
+  margin: 1.5rem 0;
   background-color: #fafafa;
-  padding: 28pt;
+  padding: 2rem;
   border: 1px solid #ddd;
 }
 
-#content code {
+.content code {
   font-family: 'Consolas', monospace;
 }
 
-#content a {
+.content a {
   color: #1266A6;
 }
 
-#content a:hover {
+.content a:hover {
   text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
